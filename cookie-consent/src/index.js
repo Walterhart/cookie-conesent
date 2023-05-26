@@ -65,7 +65,7 @@ consentForm.addEventListener('submit', function(e){
             <h2>Thanks <span class="modal-display-name">${fullName}</span>, COOKIE COOKIE!</h2>
             <p>Nom Nom Nom Nom</p>
             <div class="cookie-gif">
-                <img src="../assets/images/cookie.gif">
+                <img src="./assets/images/cookie.gif">
             </div>
         `;
         modalCloseBtn.disabled = false;

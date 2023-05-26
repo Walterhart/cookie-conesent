@@ -65,26 +65,23 @@ main{
 /* modal */
   
 .modal {
-    
-    height: 420px;
+    display: none;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 500px;
     width: 350px;
     border-radius: 5px;
     box-shadow: 0px 0px 6px 2px #666;
     background-color: #212529;
     color: whitesmoke;
-    display:none;
-    
-    /*set cookie in middle of screen*/
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
 }
 
 .modal-inner{
-    width: 290px;
+    width: 300px;
     margin: 0 auto;
 }
 
@@ -131,6 +128,10 @@ main{
     cursor: pointer;
 }
 
+.modal-btns-reverse{
+    flex-direction: row-reverse;
+}
+
 /* modal input */
 
 input{
@@ -155,5 +156,58 @@ input{
 .modal-text{
     height: 140px;
     line-height: 23px;
-    margin-bottom: 0;
+    margin-bottom: 40px;
 }
+
+.cookie--gif{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.cookie-gif img{
+    box-shadow: 1px 1px 3px #999;
+    border-radius: 5px;
+}
+
+/* svg loading */
+.svg-loader{
+    display:flex;
+    position: relative;
+    align-content: space-around;
+    justify-content: center;
+    margin-top:40px;
+  }
+  .loader-svg{
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+    fill: none;
+    stroke-width: 5px;
+    stroke-linecap: round;
+    stroke: rgb(64, 0, 148);
+  }
+  .loader-svg.bg{
+    stroke-width: 8px;
+    stroke: rgb(207, 205, 245);
+  }
+  .animate{
+    stroke-dasharray: 242.6;
+    animation: fill-animation 1s cubic-bezier(1,1,1,1) 0s infinite;
+  }
+  .cookie-loader{
+    text-align:center;
+  }
+  
+  @keyframes fill-animation{
+    0%{
+      stroke-dasharray: 40 242.6;
+      stroke-dashoffset: 0;
+    }
+    50%{
+      stroke-dasharray: 141.3;
+      stroke-dashoffset: 141.3;
+    }
+    100%{
+      stroke-dasharray: 40 242.6;
+      stroke-dashoffset: 282.6;
+    }
+  }

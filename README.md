@@ -13,6 +13,5 @@ To use the cookie consent feature, follow these steps:
 3. The cookie consent feature will be displayed on the web page, and users will be prompted to provide consent for the use of cookies.
 
 4. Test the functionality by interacting with the cookie consent modal and verifying that it behaves as expected.
-
-Please note that you may need to set up a local development server or host the project on a web server to properly test the cookie consent feature due to browser security restrictions related to cookies.
+s.
 
